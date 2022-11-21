@@ -280,8 +280,23 @@ header a:hover {
 #populaires {
     width: 420px;
     height: 626px;
+    padding-top: 50px;
     background-color: var(--color3);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titre_populaires_icone {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre_populaires_icone i {
+    color: var(--color1);
 }
 .card_populaires {
     border: 1px black solid;
@@ -303,6 +318,7 @@ header a:hover {
 }
 
 .descriptif_notation_populaires {
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
