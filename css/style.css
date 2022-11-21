@@ -211,7 +211,6 @@ header a:hover {
 }
 
 .card_heb {
-    border: 1px red solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -222,7 +221,6 @@ header a:hover {
 .card_hebergements {
     width: 246px;
     height: 199px;
-    border: 1px black solid;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -238,14 +236,22 @@ header a:hover {
 .card_hebergements img {
     width: 95%;
     height: 124px;
-    margin: auto;
+    margin: 5px auto 0 auto;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 
 }
 
 .descriptif, .notation {
+    font-size: 12px;
+}
+
+.descriptif_notation_hebergements {
     margin-left: 15px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .notation {
@@ -256,10 +262,11 @@ header a:hover {
     color: var(--color3);
 }
 
-/*#hebergements h3 {
-    margin-left: 45px;
-}*/
-
+.afficher_plus {
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 44px;
+}
 
 
 /************************************************** SECTION ID=populaires **************************************************/
@@ -289,10 +296,10 @@ header a:hover {
     border-radius: 20px 0 0 20px;
 }
 
-.descriptif_notation {
+.descriptif_notation_populaires {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #hebergements_populaires {
