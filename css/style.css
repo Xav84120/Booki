@@ -211,11 +211,17 @@ header a:hover {
 }
 
 .card_heb {
+    margin-top: 30px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 40px;
+   
+}
+
+.card_heb a {
+    padding: 0;
+    height: 199px;
 }
 
 .card_hebergements {
@@ -229,7 +235,7 @@ header a:hover {
     align-content: center;
 }
 
-.card_hebergements:nth-child(-n+3) {
+.card_heb a {
     margin-bottom: 30px;
 }
 
