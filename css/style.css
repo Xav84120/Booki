@@ -9,6 +9,7 @@
     --color1: #0065FC;
     --color2: #DEEBFF;
     --color3: #F2F2F2;
+    --color4: #D9D9D9;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
 #conteneur {
     width: 90%;
     margin: 0 auto;
-    background-color: none;
 }
 h1 {
     font-weight: 700;
@@ -75,7 +75,7 @@ header a:hover {
     color: var(--color1);
 }
 
-/************************************************* SECTION ID="recherche" *******************************************************/
+/************************************************* SECTION ID="RECHERCHE" *******************************************************/
 
 #recherche h1 {
     font-weight: 700;
@@ -201,7 +201,7 @@ header a:hover {
     font-size: 10px;
 }
 
-/*************************************************** SECTION ID="hebergements" *****************************************************/
+/*************************************************** SECTION ID="HEBERGEMENTS" *****************************************************/
 
 #hebergements {
     width: 65%;
@@ -268,18 +268,19 @@ header a:hover {
     color: var(--color1);
 }
 
-#notation_grise {
-    color: var(--color3);
+.notation_grise {
+    color: var(--color4);
 }
 
 .afficher_plus {
     font-weight: 700;
     font-size: 18px;
     margin-left: 44px;
+    margin-bottom: 45px;
 }
 
 
-/************************************************** SECTION ID=populaires **************************************************/
+/************************************************** SECTION ID=POPULAIRES **************************************************/
 
 #populaires {
     width: 32%;
@@ -303,7 +304,6 @@ header a:hover {
     color: var(--color1);
 }
 .card_populaires {
-    border: 1px black solid;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     width: 82%;
@@ -345,7 +345,6 @@ header a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .card_activites {
