@@ -200,7 +200,7 @@ header a:hover {
 
 #hebergements {
     width: 880px;
-    height: 626px;
+    /*height: 626px;*/
     padding-top: 50px;
     background-color: var(--color3);
     border-radius: 20px;
@@ -328,4 +328,39 @@ header a:hover {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+}
+
+
+/****************************************************** SECTION ID=ACTIVITES ******************************************************/
+
+#activites {
+    margin: 50px 0;
+}
+
+.card_act {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card_activites {
+    border: 2px var(--color3) solid;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    /*height: 445px;*/
+}
+
+.card_activites img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 390px;
+}
+
+.card_activites h2 {
+    width: 100%;
+    height: 54px;
+    padding: 14px 20px;
+    
 }
