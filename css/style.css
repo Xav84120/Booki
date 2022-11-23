@@ -364,3 +364,17 @@ header a:hover {
     padding: 14px 20px;
     
 }
+
+/**************************************************************** FOOTER **********************************************************/
+
+footer {
+    background-color: var(--color3);
+    padding-top: 50px;
+}
+
+.card_foot {
+    width: 70%;
+    margin-left: 65px;
+    display: flex;
+    justify-content: space-between;
+}
