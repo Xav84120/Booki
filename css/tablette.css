@@ -23,6 +23,7 @@ body {
 h1 {
     font-weight: 700;
     font-size: 22px; 
+    color: green;
 }
 
 h2 {
@@ -201,14 +202,23 @@ header a:hover {
     font-size: 10px;
 }
 
+/**************************************************DIV HEBERGEMENTS_POPULAIRES******************************************************/
+
+#hebergements_populaires {
+    display: flex;
+    flex-direction: column;
+}
+
 /*************************************************** SECTION ID="HEBERGEMENTS" *****************************************************/
 
 #hebergements {
-    width: 65%;
+
     min-height: 625px;
     padding-top: 50px;
     background-color: var(--color3);
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #hebergements h1 {
@@ -219,7 +229,7 @@ header a:hover {
     margin-top: 30px;
     margin-bottom: 40px;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-around;
    
 }
@@ -284,15 +294,13 @@ header a:hover {
 /************************************************** SECTION ID=POPULAIRES **************************************************/
 
 #populaires {
-    width: 32%;
-    min-height: 625px;
+
     padding-top: 50px;
     background-color: var(--color3);
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 .titre_populaires_icone {
@@ -329,11 +337,7 @@ header a:hover {
     justify-content: space-between;
 }
 
-#hebergements_populaires {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-}
+
 
 
 /****************************************************** SECTION ID=ACTIVITES ******************************************************/
