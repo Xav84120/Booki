@@ -80,6 +80,7 @@ header a:hover {
 #recherche h1 {
     font-weight: 700;
     font-size: 22px;
+    color: green;
 }
 
 #recherche p {
@@ -201,10 +202,17 @@ header a:hover {
     font-size: 10px;
 }
 
+/************************************************ DIV="HEBERGEMENTS_POPULAIRES" ****************************************************/
+
+#hebergements_populaires {
+    display: flex;
+    flex-direction: column;
+}
+
 /*************************************************** SECTION ID="HEBERGEMENTS" *****************************************************/
 
 #hebergements {
-    width: 65%;
+    /*width: 65%;*/
     min-height: 625px;
     padding-top: 50px;
     background-color: var(--color3);

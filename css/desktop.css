@@ -219,9 +219,13 @@ header a:hover {
     margin-top: 30px;
     margin-bottom: 40px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
-   
+}
+
+.card_heb_part {
+    display: flex;
+    justify-content: space-around;
 }
 
 .card_heb a {

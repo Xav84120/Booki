@@ -80,6 +80,7 @@ header a:hover {
 #recherche h1 {
     font-weight: 700;
     font-size: 22px;
+    color: red;
 }
 
 #recherche p {
