@@ -295,6 +295,13 @@ header a:hover {
     align-items: center;
 }
 
+.card_pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .titre_populaires_icone {
     width: 80%;
     display: flex;
