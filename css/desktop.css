@@ -216,6 +216,7 @@ header a:hover {
 }
 
 .card_heb {
+    border: 1px red solid;
     margin-top: 30px;
     margin-bottom: 40px;
     display: flex;
@@ -224,6 +225,7 @@ header a:hover {
 }
 
 .card_heb_part {
+    border: 1px green solid;
     display: flex;
     justify-content: space-around;
 }

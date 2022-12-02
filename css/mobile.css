@@ -23,7 +23,7 @@ body {
 h1 {
     font-weight: 700;
     font-size: 22px; 
-    color: green;
+    color: red;
 }
 
 h2 {
@@ -50,11 +50,11 @@ a {
 }
 
 header {
-    position: relative;
+    
     padding: 40px 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    
     height: 150px;
 }
 
@@ -64,9 +64,10 @@ header {
 }
 
 header nav {
-    position: absolute;
-    right: 0;
-    width: 300px;
+   
+   /* right: 200px;*/
+    width: 50%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
