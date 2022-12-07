@@ -23,7 +23,6 @@ body {
 h1 {
     font-weight: 700;
     font-size: 22px; 
-    color: red;
 }
 
 h2 {
@@ -36,7 +35,13 @@ h3 {
     font-size: 14px;
 }
 
+img {
+    object-fit: cover;
+}
 
+.euro {
+    font-weight: bold;
+}
 
 
 /************************************************************* HEADER ****************************************************************/
@@ -50,11 +55,11 @@ a {
 }
 
 header {
-    
+    position: relative;
     padding: 40px 0;
     display: flex;
-    flex-direction: column;
-    
+    align-items: center;
+    justify-content: space-between;
     height: 150px;
 }
 
@@ -64,10 +69,9 @@ header {
 }
 
 header nav {
-   
-   /* right: 200px;*/
-    width: 50%;
-    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -76,7 +80,6 @@ header a:hover {
     border-top: 2px var(--color1) solid;
     color: var(--color1);
 }
-
 
 /************************************************* SECTION ID="RECHERCHE" *******************************************************/
 
@@ -91,7 +94,6 @@ header a:hover {
 }
 
 
-/* <article id="barre_recherche" */
 #barre_recherche {
     display: flex;
     justify-content: flex-start;
@@ -129,7 +131,6 @@ header a:hover {
     font-weight: 700;
 }
 
-/* < article id="filtre" */
 #filtre {
     margin-top: 35px;
     width: 915px;
@@ -191,7 +192,6 @@ header a:hover {
 }
 
 
-/* <article id="info_logement" */
 #info_logement i {
     border: 2px #D9D9D9 solid;
     color: var(--color1);
@@ -204,17 +204,10 @@ header a:hover {
     font-size: 10px;
 }
 
-/************************************************* DIV ID=HEBERGEMENTS_POPULAIRES **************************************************/
-
-#hebergements_populaires {
-    display: flex;
-    flex-direction: column;
-}
-
 /*************************************************** SECTION ID="HEBERGEMENTS" *****************************************************/
 
 #hebergements {
-    width: 100%;
+    width: 65%;
     min-height: 625px;
     padding-top: 50px;
     background-color: var(--color3);
@@ -236,15 +229,18 @@ header a:hover {
 .card_heb_part {
     display: flex;
     justify-content: space-around;
+    flex: 1;
 }
 
 .card_heb a {
+    margin-bottom: 30px;
     padding: 0;
     height: 199px;
+    flex: 0 1 246px;
 }
 
 .card_hebergements {
-    width: 246px;
+    padding: 5px;
     height: 199px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -254,18 +250,33 @@ header a:hover {
     align-content: center;
 }
 
-.card_heb a {
-    margin-bottom: 30px;
-}
-
-.card_hebergements img {
-    width: 95%;
+.images_hebergements  {
+    max-width: 246px;
+    width: 100%;
     height: 124px;
-    margin: 5px auto 0 auto;
+    margin: auto;
     border-radius: 20px 20px 0 0;
-    object-fit: cover;
-
 }
+
+#images_hebergements_canebiere {
+    background: url(../images/hébergements/canebiere.jpg) center/cover;
+}
+#images_hebergements_port {
+    background: url(../images/hébergements/port.jpg) center/cover;
+}
+#images_hebergements_mouettes {
+    background: url(../images/hébergements/mouettes.jpg) center/cover;
+}
+#images_hebergements_mer {
+    background: url(../images/hébergements/mer.jpg) center/cover;
+}
+#images_hebergements_panier {
+    background: url(../images/hébergements/panier.jpg) center/cover;
+}
+#images_hebergements_amina {
+    background: url(../images/hébergements/amina.jpg) center/cover;
+}
+
 
 .descriptif, .notation {
     font-size: 12px;
@@ -295,12 +306,12 @@ header a:hover {
 }
 
 
+
 /************************************************** SECTION ID=POPULAIRES **************************************************/
 
 #populaires {
-    width: 100%;
-    min-height: 275px;
-    margin-top: 55px;
+    width: 32%;
+    min-height: 625px;
     padding-top: 50px;
     background-color: var(--color3);
     border-radius: 20px;
@@ -311,14 +322,15 @@ header a:hover {
 }
 
 .card_pop {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .titre_populaires_icone {
-    width: 95%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -329,26 +341,38 @@ header a:hover {
 .card_populaires {
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    height: 144px;
+    width: 82%;
     margin: 20px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.card_populaires img {
-    width: 137px;
+.images_populaires {
+    min-width: 128px;
     height: 134px;
     margin: 5px;
-    object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
 
+#images_populaires_matin {
+    background: url(../images/populaires/matin.jpg) center/cover;
+}
+
+#images_populaires_eau {
+    background: url(../images/populaires/eau.jpg) center/cover;
+}
+
+#images_populaires_blanc {
+    background: url(../images/populaires/blanc.jpg) center/cover;
+}
+
 .descriptif_notation_populaires {
-    margin: 20px;
+    flex: 0 1 auto;
+    margin: 17px 21px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #hebergements_populaires {
@@ -361,8 +385,6 @@ header a:hover {
 /****************************************************** SECTION ID=ACTIVITES ******************************************************/
 
 #activites {
-    border: 1px red solid;
-    width: 100%;
     margin: 50px 0;
 
 }
@@ -377,13 +399,13 @@ header a:hover {
     border: 2px var(--color3) solid;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    width: 185px;
+    width: 300px;
 }
 
 .card_activites img {
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 210px;
+    height: 390px;
 }
 
 .card_activites h2 {
@@ -393,6 +415,26 @@ header a:hover {
     
 }
 
+.images_activites {
+    width: 100%;
+    height: 390px;
+    border-radius: 20px 20px 0 0;
+}
+#images_activites_port {
+    background: url(../images/activites/vieux_port.jpg) center/cover;
+}
+
+#images_activites_pomegues {
+    background: url(../images/activites/pomegues.jpg) center/cover;
+}
+
+#images_activites_calanques {
+    background: url(../images/activites/calanques.jpg) center/cover;
+}
+
+#images_activites_garde {
+    background: url(../images/activites/garde.jpg) center/cover;
+}
 /**************************************************************** FOOTER **********************************************************/
 
 footer {
