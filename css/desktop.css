@@ -39,6 +39,10 @@ img {
     object-fit: cover;
 }
 
+.euro {
+    font-weight: bold;
+}
+
 
 /************************************************************* HEADER ****************************************************************/
 
@@ -218,7 +222,6 @@ header a:hover {
 }
 
 .card_heb {
-    border: 1px red solid;
     margin-top: 30px;
     margin-bottom: 40px;
     display: flex;
@@ -227,13 +230,13 @@ header a:hover {
 }
 
 .card_heb_part {
-    border: 1px green solid;
     display: flex;
     justify-content: space-around;
     flex: 1;
 }
 
 .card_heb a {
+    margin-bottom: 30px;
     padding: 0;
     height: 199px;
     flex: 0 1 246px;
@@ -242,6 +245,7 @@ header a:hover {
 .card_hebergements {
     /* width: 246px; */
     /* width: 100%; */
+    padding: 5px;
     height: 199px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -251,18 +255,34 @@ header a:hover {
     align-content: center;
 }
 
-.card_heb a {
-    margin-bottom: 30px;
-}
-
-.card_hebergements img {
+.images_hebergements  {
     /* width: 95% */
     max-width: 246px;
     width: 100%;
     height: 124px;
-    margin: 5px auto 0 auto;
+    margin: auto;
     border-radius: 20px 20px 0 0;
 }
+
+#images_hebergements_canebiere {
+    background: url(../images/hébergements/canebiere.jpg) center/cover;
+}
+#images_hebergements_port {
+    background: url(../images/hébergements/port.jpg) center/cover;
+}
+#images_hebergements_mouettes {
+    background: url(../images/hébergements/mouettes.jpg) center/cover;
+}
+#images_hebergements_mer {
+    background: url(../images/hébergements/mer.jpg) center/cover;
+}
+#images_hebergements_panier {
+    background: url(../images/hébergements/panier.jpg) center/cover;
+}
+#images_hebergements_amina {
+    background: url(../images/hébergements/amina.jpg) center/cover;
+}
+
 
 .descriptif, .notation {
     font-size: 12px;
@@ -311,6 +331,7 @@ header a:hover {
 }
 
 .card_pop {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -327,30 +348,43 @@ header a:hover {
     color: var(--color1);
 }
 .card_populaires {
-    flex: 0 1 144px;
+    /* flex: 0 1 144px; */
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     width: 82%;
     /* height: 144px; */
     margin: 20px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.card_populaires img {
-    flex: 0 1 137px;
-    max-width: 137px;
+.images_populaires {
+    /* flex: 0 1 137px; */
+    min-width: 128px;
     height: 134px;
     margin: 5px;
     border-radius: 20px 0 0 20px;
 }
 
+#images_populaires_matin {
+    background: url(../images/populaires/matin.jpg) center/cover;
+}
+
+#images_populaires_eau {
+    background: url(../images/populaires/eau.jpg) center/cover;
+}
+
+#images_populaires_blanc {
+    background: url(../images/populaires/blanc.jpg) center/cover;
+}
+
 .descriptif_notation_populaires {
     flex: 0 1 auto;
-    margin: 20px;
+    margin: 17px 21px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #hebergements_populaires {
