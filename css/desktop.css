@@ -94,7 +94,6 @@ header a:hover {
 }
 
 
-/* <article id="barre_recherche" */
 #barre_recherche {
     display: flex;
     justify-content: flex-start;
@@ -132,7 +131,6 @@ header a:hover {
     font-weight: 700;
 }
 
-/* < article id="filtre" */
 #filtre {
     margin-top: 35px;
     width: 915px;
@@ -194,7 +192,6 @@ header a:hover {
 }
 
 
-/* <article id="info_logement" */
 #info_logement i {
     border: 2px #D9D9D9 solid;
     color: var(--color1);
@@ -243,8 +240,6 @@ header a:hover {
 }
 
 .card_hebergements {
-    /* width: 246px; */
-    /* width: 100%; */
     padding: 5px;
     height: 199px;
     border-radius: 20px;
@@ -256,7 +251,6 @@ header a:hover {
 }
 
 .images_hebergements  {
-    /* width: 95% */
     max-width: 246px;
     width: 100%;
     height: 124px;
@@ -311,9 +305,6 @@ header a:hover {
     margin-bottom: 45px;
 }
 
-.card_hebergements {
-    flex: 1;
-}
 
 
 /************************************************** SECTION ID=POPULAIRES **************************************************/
@@ -348,18 +339,15 @@ header a:hover {
     color: var(--color1);
 }
 .card_populaires {
-    /* flex: 0 1 144px; */
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     width: 82%;
-    /* height: 144px; */
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .images_populaires {
-    /* flex: 0 1 137px; */
     min-width: 128px;
     height: 134px;
     margin: 5px;
@@ -427,6 +415,26 @@ header a:hover {
     
 }
 
+.images_activites {
+    width: 100%;
+    height: 390px;
+    border-radius: 20px 20px 0 0;
+}
+#images_activites_port {
+    background: url(../images/activites/vieux_port.jpg) center/cover;
+}
+
+#images_activites_pomegues {
+    background: url(../images/activites/pomegues.jpg) center/cover;
+}
+
+#images_activites_calanques {
+    background: url(../images/activites/calanques.jpg) center/cover;
+}
+
+#images_activites_garde {
+    background: url(../images/activites/garde.jpg) center/cover;
+}
 /**************************************************************** FOOTER **********************************************************/
 
 footer {
