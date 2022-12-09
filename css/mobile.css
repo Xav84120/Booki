@@ -56,13 +56,14 @@ a {
 }
 
 header {
-    position: relative;
+    position: static;
     padding: 40px 0;
+    margin-bottom: 35px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
 }
 
 #logo img {
@@ -71,15 +72,17 @@ header {
 }
 
 header nav {
-    position: absolute;
-    right: 190px;
-    width: 300px;
+    position: static;
+    border-bottom: 2px var(--color4) solid;
+    /* right: 190px; */
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header a:hover {
-    border-top: 2px var(--color1) solid;
+    border-top: none;
+    border-bottom: 2px var(--color1) solid;
     color: var(--color1);
 }
 
