@@ -13,9 +13,9 @@
 }
 
 #conteneur {
-    width: 100%;
-    min-width: 380px;
+    width: 80%;
     margin: auto;
+    min-width: 380px;
 }
 h1 {
     font-weight: 700;
@@ -86,6 +86,8 @@ header a:hover {
 
 #recherche {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 #recherche h1 {
     font-weight: 700;
